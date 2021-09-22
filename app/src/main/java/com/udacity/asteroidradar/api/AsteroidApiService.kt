@@ -25,7 +25,6 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
-// Implement the MarsApiService interface with @GET getPropierties returning a String
 interface AsteroidApiService {
     @GET("neo/rest/v1/feed")
     suspend fun getAsteroids(@Query("start_date") startDate: String,

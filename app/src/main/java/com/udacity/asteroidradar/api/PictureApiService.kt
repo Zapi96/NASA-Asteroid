@@ -24,7 +24,6 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
-// Implement the MarsApiService interface with @GET getPropierties returning a String
 interface PictureApiService {
     @GET("planetary/apod")
     suspend fun getPicture(@Query("api_key") apiKey: String): PictureOfDay
