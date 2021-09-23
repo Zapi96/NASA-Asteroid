@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:contentDescription="Asteroid details">
+        >
 
         <TextView
             android:id="@+id/asteroidName"
@@ -27,6 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Asteroid"
+            android:contentDescription="Asteroid codename"
             />
 
         <TextView
@@ -55,7 +56,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:statusIcon="@{asteroid.potentiallyHazardous}"
             tools:srcCompat="@drawable/ic_status_normal"
-            android:contentDescription="@string/hazard_image"/>
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

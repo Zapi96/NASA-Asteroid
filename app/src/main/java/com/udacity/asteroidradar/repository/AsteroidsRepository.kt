@@ -10,6 +10,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.viewModelScope
 import com.udacity.asteroidradar.Asteroid
+import com.udacity.asteroidradar.BuildConfig
 import com.udacity.asteroidradar.Constants
 import com.udacity.asteroidradar.PictureOfDay
 import com.udacity.asteroidradar.api.*
@@ -33,7 +34,7 @@ enum class AsteroidsApiStatus { LOADING, DONE }
 
 class AsteroidsRepository(private val database: AsteroidsDatabase) {
 
-    private val APIKey = "z1otsIUESDR30amDFmopButudPjI34MVfcAi8N3N"
+    private val APIKey = BuildConfig.NASA_API_KEY
 
 
     @RequiresApi(Build.VERSION_CODES.O)
